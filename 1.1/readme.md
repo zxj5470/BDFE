@@ -23,7 +23,7 @@
     写 markdown 推荐使用 **VSCode** + **Markdown Preview Enhance 插件**
 
     #### 有什么好处呢？
-    - <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+</kbd><kbd>P</kbd>
+    - <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>
 输入TOC可以根据`#`的标签生成链接就像一开始的这个样子。
     - VSCode 集成了一个大体上能用的git工具。提交撤回等各种主要功能都有。
 
@@ -57,8 +57,11 @@
 #### git 操作
 ##### 创建本地仓库
 `git init`
-`git remote add origin https方式或者ssh方式的地址`
+
+`git remote add origin https/ssh地址`
+
 (比如`git remote add origin git@github.com:zxj5470/BDFE`
+
 或者 `git remote add origin https://github.com/zxj5470/BDFE.git`)
 
 如果是用的clone就不用管这些东西了。
