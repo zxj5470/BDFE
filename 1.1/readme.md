@@ -11,6 +11,9 @@
 			* [创建本地仓库](#创建本地仓库)
 			* [提交](#提交)
 			* [分支](#分支)
+				* [新建分支](#新建分支)
+				* [切换分支](#切换分支)
+				* [合并分支](#合并分支)
 
 <!-- /code_chunk_output -->
 
@@ -19,8 +22,10 @@
 - VSCode 
     写 markdown 推荐使用 **VSCode** + **Markdown Preview Enhance 插件**
 
-    (有什么好处呢？<kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+</kbd><kbd>P</kbd>
-输入TOC可以根据`#`的标签生成链接就像一开始的这个样子。)
+    #### 有什么好处呢？
+    - <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+</kbd><kbd>P</kbd>
+输入TOC可以根据`#`的标签生成链接就像一开始的这个样子。
+    - VSCode 集成了一个大体上能用的git工具。提交撤回等各种主要功能都有。
 
 - WebStorm
     写前端当然需要这玩意啦。何况我还是JB厨，连 `ToolBox` 都装了。
@@ -75,3 +80,25 @@ git push
 一般个人项目比较少接触这个
 多人项目的时候会有用到。
 一般就是自己checkout出一个分支，推送的时候推送过去。用pr(pull request)到origin/master分支上。
+
+###### 新建分支
+```bash
+git checkout -b newbranch
+```
+相当于执行
+```bash
+git branch newbranch
+git checkout newbranch
+```
+###### 切换分支
+
+切换分支到 master
+```bash
+git checkout master
+```
+
+###### 合并分支
+```bash
+git merge newbranch
+```
+把 `newbranch` 上的东西合并到当前分支，一般情况下我们当前是 `master`
